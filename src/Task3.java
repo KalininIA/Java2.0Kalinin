@@ -42,9 +42,17 @@ public class Task3 {
                 for (int i = 0; i < dlina; i++) {
                     nums[i] = in.next();
                 }
-                System.out.print ("Данные массива:");
+                System.out.print ("Самое длинное слово: ");
+                int maxWord = 0;
                 for (int i = 0; i < dlina; i++) {
-                    System.out.print(" " + nums[i]);
+                    if(nums[i].length() > maxWord){
+                        maxWord = nums[i].length();
+                    }
+                }
+                for(int i = 0; i < nums[i].length(); i++){
+                    if(nums[i].length() == maxWord){
+                        System.out.println(nums[i]);
+                    }
                 }
                 System.out.println();
             }
